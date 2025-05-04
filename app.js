@@ -1,4 +1,4 @@
-const firebaseConfig = {
+var firebaseConfig = {
   apiKey: "AIzaSyC95HZ_K3gVeixiEYsU-kQRo4LgP2k5Bmk",
   authDomain: "thesrc-a4aa9.firebaseapp.com",
   databaseURL: "https://thesrc-a4aa9-default-rtdb.firebaseio.com",
@@ -10,13 +10,11 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = firebase.initializeApp(firebaseConfig);
+var app = firebase.initializeApp(firebaseConfig);
 
 // To dynamically make carousel's slides change when carousel section is in view
-var carouselElement = document.getElementById("carouselExample");
-  var aboutSection = document.getElementById("about");
-  var aboutDetailSection = document.getElementById("aboutDetail");
-
+document.addEventListener("DOMContentLoaded", function () {
+  var carouselElement = document.getElementById("carouselExample");
   var carousel = new bootstrap.Carousel(carouselElement, {
     interval: 3000,
     ride: false
@@ -34,18 +32,16 @@ var carouselElement = document.getElementById("carouselExample");
   }
 
   function handleScroll() {
-    const aboutVisible = isInViewport(aboutSection);
-    const detailVisible = isInViewport(aboutDetailSection);
-
-    if (aboutVisible && !detailVisible) {
-      carousel.cycle(); 
+    if (isInViewport(carouselElement)) {
+      carousel.cycle();
     } else {
-      carousel.pause(); 
+      carousel.pause();
     }
   }
 
   window.addEventListener("scroll", handleScroll);
   window.addEventListener("load", handleScroll);
+});
 
 // To add the .active class dynamically in the current section
 window.onscroll = function () {

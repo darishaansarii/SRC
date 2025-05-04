@@ -122,12 +122,15 @@
 
 /* Hero Styling End */
 
-
 /* Carousel Styling Start */
 
 .carousel-bg1 {
-  height: 580px; 
-  background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url('./Images/slide-1.jpeg');
+  height: 580px;
+  background-image: linear-gradient(
+      rgba(50, 50, 50, 0.5),
+      rgba(50, 50, 50, 0.5)
+    ),
+    url("./Images/slide-1.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -135,7 +138,7 @@
 
 .carousel-bg2 {
   height: 580px;
-  background-image: url("./Images/slide-2.jpeg"); 
+  background-image: url("./Images/slide-2.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -150,7 +153,11 @@
 
 .carousel-bg3 {
   height: 580px;
-  background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url('./Images/slide-3.jpg');
+  background-image: linear-gradient(
+      rgba(50, 50, 50, 0.5),
+      rgba(50, 50, 50, 0.5)
+    ),
+    url("./Images/slide-3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -158,7 +165,11 @@
 
 .carousel-bg4 {
   height: 580px;
-  background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url('./Images/slide-4.jpg');
+  background-image: linear-gradient(
+      rgba(50, 50, 50, 0.5),
+      rgba(50, 50, 50, 0.5)
+    ),
+    url("./Images/slide-4.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -166,7 +177,11 @@
 
 .carousel-bg5 {
   height: 580px;
-  background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url('./Images/slide-5.jpg');
+  background-image: linear-gradient(
+      rgba(50, 50, 50, 0.5),
+      rgba(50, 50, 50, 0.5)
+    ),
+    url("./Images/slide-5.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -175,7 +190,7 @@
 
 .carousel-bg6 {
   height: 580px;
-  background-image: url("./Images/slide-6.jpg"); 
+  background-image: url("./Images/slide-6.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -184,7 +199,11 @@
 
 .carousel-bg7 {
   height: 580px;
-  background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url('./Images/slide-7.jpg');
+  background-image: linear-gradient(
+      rgba(50, 50, 50, 0.5),
+      rgba(50, 50, 50, 0.5)
+    ),
+    url("./Images/slide-7.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -199,58 +218,57 @@
   letter-spacing: 0.5rem;
 }
 
-
 /* Carousel Styling End */
 
- /* Mission, vision, values Start */
+/* Mission, vision, values Start */
 
- .outer {
+.outer {
   margin: 30px;
   padding: 50px;
- }
+}
 
- .inner {
+.inner {
   width: 350px;
   height: 350px;
   padding: 10px;
- }
+}
 
- .icon-size {
+.icon-size {
   font-size: 70px;
   padding-bottom: 50px;
- }
+}
 
- .mission {
-  color: #D81B60 !important;
-  --icon-color: #D81B60;
- }
+.mission {
+  color: #d81b60 !important;
+  --icon-color: #d81b60;
+}
 
- .vision {
-  color: #00ACC1 !important;
-  --icon-color: #00ACC1;
- }
+.vision {
+  color: #00acc1 !important;
+  --icon-color: #00acc1;
+}
 
- .values {
-  color: #F9A825 !important;
-  --icon-color: #F9A825;
- }
+.values {
+  color: #f9a825 !important;
+  --icon-color: #f9a825;
+}
 
- .icon-size + h1 {
+.icon-size + h1 {
   font-weight: 700 !important;
- }
+}
 
- .inner {
+.inner {
   border-radius: 20px;
   box-shadow: 0 2px 5px var(--icon-color);
- }
+}
 
- .inner:hover {
+.inner:hover {
   box-shadow: 0 5px 10px var(--icon-color);
   transform: translateY(-5px);
   transition: all 0.3s ease;
 }
 
- /* Mission, vision, values Start */
+/* Mission, vision, values Start */
 
 /* Courses Styling Start */
 
@@ -268,10 +286,10 @@
   overflow: hidden;
 }
 
-.course-card:hover, .card:hover {
+.course-card:hover,
+.card:hover {
   transform: translateY(-5px) !important;
   box-shadow: 0 10px 20px rgba(26, 35, 126, 0.2) !important;
-
 }
 
 .course-img {
@@ -279,7 +297,8 @@
   object-fit: cover;
 }
 
-.course-btn, .admission-btn {
+.course-btn,
+.admission-btn {
   background-color: #fbc02d;
   color: #1a237e !important;
   font-weight: 500;
@@ -289,13 +308,13 @@
   transition: background-color 0.3s ease;
 }
 
-.course-btn:hover, .admission-btn:hover {
+.course-btn:hover,
+.admission-btn:hover {
   background-color: #ffd54f;
   color: #1a237e;
 }
 
 /* Courses Styling End */
-
 
 /* Admissions Styling Start */
 
@@ -304,12 +323,12 @@
 }
 
 .blueColor {
-  color: #1a237e !important; 
+  color: #1a237e !important;
   font-weight: 600 !important;
 }
 
 .paraStyle {
-  color: #212121; 
+  color: #212121;
   font-size: 1.1rem;
 }
 
@@ -318,14 +337,13 @@
 }
 
 .admission-form {
-  border-left: 8px solid #1A237E;
+  border-left: 8px solid #1a237e;
 }
 
 /* Admissions Styling End */
 
-
 /* Footer Styling Start */
-.footer{
+.footer {
   position: relative;
 }
 .backToTopIcon {
@@ -333,7 +351,7 @@
   top: 20px;
   right: 18px;
   border-radius: 50%;
-  padding:3px 10px;
+  padding: 3px 10px;
   border: 2px solid #fff;
   color: #fff !important;
   text-decoration: none;
@@ -345,7 +363,6 @@
 }
 
 /* Footer Styling End */
-
 
 @media only screen and (max-width: 1240px) {
   .main-heading {
@@ -371,13 +388,13 @@
   .outer {
     margin: 30px;
     padding: 30px;
-   }
-  
-   .inner {
+  }
+
+  .inner {
     width: 400px;
     height: 350px;
     padding: 10px;
-   }
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -388,36 +405,39 @@
   .motto {
     font-size: 15px;
   }
-
 }
 
 @media only screen and (max-width: 480px) {
-    .carousel-item h1 {
-      font-size: 25px;
-    }
-    .carousel-item p {
-      font-size: 13px;
-    }
-    .letter-space {
-      letter-spacing: 0.3rem;
-    }
-    .outer {
-      margin: 0 !important;
-      padding-left: 0px !important;
-      padding-right: 0px !important;
-      padding-bottom: 0px !important;
-      padding-top: 30px !important;
-    }
-  
-    .inner {
-      width: 80% !important;
-      height: auto;
-      margin: 10px 0;
-    }
+  .carousel-item h1 {
+    font-size: 25px;
+  }
+  .carousel-item p {
+    font-size: 13px;
+  }
+  .letter-space {
+    letter-spacing: 0.3rem;
+  }
+  .outer {
+    margin: 0 !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+    padding-top: 30px !important;
+  }
 
-    #courses h1 {
-      font-size: 40px;
-    }
+  .inner {
+    width: 80% !important;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  #courses h1 {
+    font-size: 40px;
+  }
+
+  .btn-size {
+    padding: 5px 12px;
+  }
 }
 
 @media only screen and (max-width: 330px) {
