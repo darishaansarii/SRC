@@ -13,6 +13,9 @@
       rel="stylesheet"
     />
 
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Bootstrap CSS Link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
@@ -23,15 +26,17 @@
 
     <!-- External CSS Link -->
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- Firebase Links -->
+     <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
   </head>
   <body>
-    <!-- HOME SECTION START -->
-
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg position-fixed top-0 w-100">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
-          ><img src="" alt="logo" class="d-inline-block align-text-top"
+          ><img class="logo" src="./Images/logo.png" alt="logo" class="d-inline-block align-text-top"
         /></a>
         <button
           class="navbar-toggler"
@@ -55,39 +60,31 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Courses</a>
+              <a class="nav-link" href="#courses">Courses</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Admissions</a>
+              <a class="nav-link" href="#admissions">Admissions</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#contactUs">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
     <!-- Navbar End -->
 
     <div class="container-fluid pt-5" id="home">
       <div class="row flex-column flex-md-row min-vh-100">
         <div class="col-md-6 p-4 p-sm-4 p-md-5 p-lg-5 text-content">
-          <h2 class="motto">"Shaping Future Minds"</h2>
+          <h2 class="motto">"Empowering Minds, Shaping Future"</h2>
           <h1 class="main-heading">Welcome To Sir Rehan's Collegiate</h1>
           <p class="main-para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-            doloremque autem aspernatur, sint recusandae consequatur est minus
-            deserunt harum, aperiam cupiditate fugit! Ullam, quia? Quam, nulla?
-            Facere inventore distinctio, modi doloremque enim esse quas in
-            placeat sit corrupti fuga necessitatibus iure maiores nam,
-            voluptatibus, eum unde qui quia obcaecati temporibus!
-          </p>
-          <button class="button" role="button">
-            <a href="#" class="text-decoration-none">View Courses</a>
-          </button>
-        </div>
+            At Sir Rehan's Collegiate,, we believe that education is the foundation of success. Our mission is to provide high-quality, result-oriented coaching that empowers students to achieve academic excellence and personal growth, our centre offers a supportive and focused learning environment for students of all levels, whether you're preparing for school exams, board exams, entry tests, or skill-based certifications, our experienced and dedicated faculty is here to guide you every step of the way.
 
+          </p>
+            <a href="#courses" class="button text-decoration-none">View Courses</a>
+        </div>
         <div class="col-md-6 p-4 image-content">
           <div class="blob-shape">
             <svg
@@ -122,11 +119,9 @@
 
     <!-- Hero Section End -->
 
-    <!-- HOME SECTION END -->
-
     <!-- ABOUT SECTION START -->
     <section id="about">
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExample" class="carousel slide carousel-fade">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div
@@ -145,7 +140,70 @@
               <div class="carousel-caption-left text-center ">
                 <h1 class="text-color">Join SRC and learn the smarter way to study!</h1>
                 <p class="text-color">We focus on concept clarity, mentorship, and results.</p>
+                <a href="#registrationForm" class="btn btn-lg admission-btn" style="">
+                  Online Register
+                </a>
               </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="carousel-bg3 d-flex align-items-center justify-content-center "
+            >
+            <div class="carousel-text text-center">
+              <h1 class="text-white letter-space">Why choose us?</h1>
+              <a href="#aboutDetail" class="btn btn-lg admission-btn" style="">
+                Learn More 
+              </a>
+            </div>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="carousel-bg4 d-flex align-items-center justify-content-center "
+            >
+            <div class="carousel-text text-center">
+              <h1 class="text-white">👉✅Personalized attention and regular assessments
+              </h1>
+            </div>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="carousel-bg5 d-flex align-items-center justify-content-center "
+            >
+            <div class="carousel-text text-center">
+              <h1 class="text-white">🧠📘⚙️Modern teaching methods and updated curriculum
+
+              </h1>
+            </div>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="carousel-bg6 d-flex align-items-center justify-content-start "
+            >
+            <div class="carousel-text text-center">
+              <h1 class="text-color">Interactive sessions and doubt-clearing classes
+                <br><br>
+              </h1>
+            </div>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="carousel-bg7 d-flex align-items-center justify-content-center "
+            >
+            <div class="carousel-text text-center">
+              <h1 class="text-white">A proven track record of student success 📈🏆🎓
+                <br><br>
+              </h1>
+            </div>
+              
             </div>
           </div>
         </div>
@@ -168,12 +226,237 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+      <!-- Mission, vision, values -->
+
+      <div id="aboutDetail" class="outer align-items-center d-flex gap-5 justify-content-center flex-wrap">
+        <div class="inner mission d-flex justify-content-center align-items-center flex-column">
+          <i class="fa-solid fa-bullseye icon-size mission"></i>
+          <h1>OUR <span class="mission">MISSION</span></h1>
+          <p class="text-center">Our mission is to empower students through quality education, personalized support, and skill development—fostering academic excellence, personal growth, and a peaceful, progressive society.</p>
+        </div>
+        <div class="inner vision d-flex justify-content-center align-items-center flex-column">
+          <i class="fa-solid fa-lightbulb icon-size vision"></i>
+          <h1>OUR <span class="vision">VISION</span></h1>
+          <p class="text-center">To become a leading center of learning that inspires students to dream big, think critically, and achieve excellence. We envision a future where every student is confident, capable, and contributes positively to society.
+          </p>
+        </div>
+        <div class="inner values d-flex justify-content-center align-items-center flex-column">
+          <i class="fa-solid fa-ribbon icon-size values"></i>
+          <h1>OUR <span class="values">VALUES</span></h1>
+          <p class="text-center">We uphold integrity, excellence, and accountability in all that we do. With a strong focus on student-centric learning, innovation, and continuous improvement, we are committed to fostering a respectful and inspiring academic environment.</p>
+        </div>
+      </div>
+
     </section>
 
     <!-- ABOUT SECTION END -->
 
-    <!-- External JS Link -->
-    <script src="./app.js"></script>
+
+    <!-- COURSES SECTION START -->
+
+    <section id="courses">
+      <div class="container py-4">
+        <h1 class="text-center fw-bold ">COURSES</h1>
+        <div class="row" id="course-container">
+        </div>
+      </div>
+      
+      
+    </section>
+    
+
+    <!-- COURSES SECTION END -->
+
+
+    <!-- ADMISSIONS PAGE START -->
+
+    <section id="admissions">
+      <section class="admission-overview py-5">
+        <div class="container text-center">
+          <h2 class="mb-3 blueColor">Your Journey Begins Here</h2>
+          <p class="mb-4 paraStyle">
+            Ready to take the next step? Join a learning community dedicated to your academic and personal success.
+          </p>
+          <a href="#registrationForm" class="btn btn-lg admission-btn" style="">
+            Get Started
+          </a>
+        </div>
+      </section>
+
+      <section id="admission-process" class="py-5">
+        <div class="container">
+          <h3 class="text-center mb-5 blueColor">Admission Process</h3>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100 shadow border-0">
+                <div class="card-body text-center">
+                  <h5 class="card-title text-color">Step 1</h5>
+                  <p class="card-text">Fill out the online registration form with your basic information and academic details.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow border-0">
+                <div class="card-body text-center">
+                  <h5 class="card-title text-color">Step 2</h5>
+                  <p class="card-text">Our team will contact you to confirm details and provide further instructions.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow border-0">
+                <div class="card-body text-center">
+                  <h5 class="card-title text-color">Step 3</h5>
+                  <p class="card-text">Visit the center to complete admission and receive your class schedule.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container my-5">
+          <div class="card shadow p-4 admission-form">
+            <h3 class="mb-4 text-center blueColor">Online Admission Form</h3>
+            
+            <form id="registrationForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+        
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" required>
+              </div>
+        
+              <div class="mb-3">
+                <label class="form-label d-block">Class</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input class-radio" type="radio" name="class" id="classIX" value="IX">
+                  <label class="form-check-label" for="classIX">IX</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input class-radio" type="radio" name="class" id="classX" value="X">
+                  <label class="form-check-label" for="classX">X</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input class-radio" type="radio" name="class" id="classXI" value="XI">
+                  <label class="form-check-label" for="classXI">XI</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input class-radio" type="radio" name="class" id="classXII" value="XII">
+                  <label class="form-check-label" for="classXII">XII</label>
+                </div>
+              </div>
+        
+              <div class="mb-3" id="fieldSection">
+              </div>
+        
+              <button type="submit" class="btn text-white px-4 admission-btn">Submit</button>
+            </form>
+          </div>
+      </section>
+      
+    </section>
+    
+
+    <!-- ADMISSIONS PAGE END -->
+
+
+    <!-- CONTACT US PAGE START -->
+
+    <section id="contactUs">
+      <div class="container my-5">
+        <div class="card shadow p-4 contact-form">
+          <h3 class="mb-4 text-center blueColor">Contact Us</h3>
+      
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="contactName" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="contactName" required>
+            </div>
+      
+            <div class="mb-3">
+              <label for="contactEmail" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="contactEmail" required>
+            </div>
+      
+            <div class="mb-3">
+              <label for="contactPhone" class="form-label">Phone Number (optional)</label>
+              <input type="tel" class="form-control" id="contactPhone">
+            </div>
+      
+            <div class="mb-3">
+              <label for="contactMessage" class="form-label">Your Message</label>
+              <textarea class="form-control" id="contactMessage" rows="4" required></textarea>
+            </div>
+      
+            <button type="submit" class="btn text-white px-4 admission-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- CONTACT US PAGE END -->
+
+    <!-- FOOTER CONTENT START -->
+
+    <footer class="bg-dark pt-5 pb-3 position-relative">
+      <div class="container">
+        <div class="row text-md-start">
+    
+          <!-- Column 1: Coaching Name & Motto -->
+          <div class="col-md-4 mb-4">
+            <h4 class="fw-bold text-white">Sir Rehan's Collegiate (SRC)</h4>
+            <p class="small fst-italic text-white">Unlock Your True Potential</p>
+          </div>
+    
+          <!-- Column 2: Quick Links -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold text-white">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#home" class="text-white text-decoration-none d-block my-1">Home</a></li>
+              <li><a href="#about" class="text-white text-decoration-none d-block my-1">About</a></li>
+              <li><a href="#courses" class="text-white text-decoration-none d-block my-1">Courses</a></li>
+              <li><a href="#admissions" class="text-white text-decoration-none d-block my-1">Admissions</a></li>
+              <li><a href="#contact" class="text-white text-decoration-none d-block my-1">Contact Us</a></li>
+            </ul>
+          </div>
+    
+          <!-- Column 3: Social Media Links -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold text-white">Connect With Us</h5>
+            <div class="d-flex justify-content-md-start gap-3 mt-2">
+              <a href="https://wa.me/923303113164" target="_blank" class="fs-4" title="WhatsApp"><i class="fa-brands fa-whatsapp text-success"></i></a>
+              <a href="https://facebook.com" target="_blank" class="fs-4" title="Facebook"><i class="fa-brands fa-facebook text-primary"></i></a>
+              <a href="mailto:example@gmail.com" class="fs-4" title="Gmail"><i class="fa-solid fa-envelope text-danger"></i></a>
+              <a href="https://instagram.com" target="_blank" class="fs-4" title="Instagram"><i class="fa-brands fa-instagram text-white"></i></a>
+            </div>
+          </div>
+    
+        </div>
+    
+        <!-- Divider and Bottom Text -->
+        <hr class="bg-light my-3">
+        <p class="small text-center mb-0 text-white">© 2025 SRC Coaching Center. All rights reserved.</p>
+      </div>
+    
+      <!-- Back to Top Button -->
+      <a href="#top" class="backToTopIcon" title="Back to top">↑</a>
+    </footer>
+    
+    
+
+    <!-- FOOTER CONTENT START -->
+    
+
 
     <!-- Bootstrap JS Link -->
     <script
@@ -181,5 +464,8 @@
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
+
+    <!-- External JS Link -->
+    <script src="./app.js"></script>
   </body>
 </html>
