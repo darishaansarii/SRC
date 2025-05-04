@@ -73,4 +73,4 @@ Project by Darisha Ansari
 
 ## 📫 Contact
 
-Feel free to reach out via [Email](mailto:darishaansarii@gmail.com) or [LinkedIn](https://www.linkedin.com/in/darishaansarii/).
+Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/darishaansarii/).
