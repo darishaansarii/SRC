@@ -36,7 +36,7 @@ Capture visitor inquiries in real-time and store them securely in Firebase.
 
 ---
 
-## 🌐 Live Demo (Optional)
+## 🌐 Live Demo
 
 [View Live Site](https://darishaansarii.github.io/SRC)
 
@@ -52,8 +52,6 @@ Capture visitor inquiries in real-time and store them securely in Firebase.
 ├── 📄 script.js (this file)
 ├── 📁 /Images
 │   └── card-1.jpg, card-2.jpg, ...
-└── 📁 /firebase
-    └── firebase-config.js (optional if separated)
 
 
 ---
