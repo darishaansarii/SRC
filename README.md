@@ -41,20 +41,6 @@ Capture visitor inquiries in real-time and store them securely in Firebase.
 [View Live Site](https://darishaansarii.github.io/SRC)
 
 ---
-
-## 🧩 Folder Structure
-
-
-📁 SRC-Website
-│
-├── 📄 index.html
-├── 📄 style.css
-├── 📄 script.js (this file)
-├── 📁 /Images
-│   └── card-1.jpg, card-2.jpg, ...
-
-
----
 ## 📈 SEO Optimization
 
 * Semantic HTML structure with descriptive alt tags
