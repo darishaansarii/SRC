@@ -1,74 +1,69 @@
-# 📚 SRC Coaching Center – One Page Educational Website
+# 📚 SRC Coaching Center – One Page Website
 
-Welcome to the official repository for the SRC Coaching Center's dynamic, single-page educational website. This project offers a seamless user experience and real-time database integration, allowing students to explore courses, register for classes, and contact the center — all through an interactive and visually engaging web interface.
+Welcome! This is the official website for **SRC Coaching Center** — designed as a smooth, single-page website that lets students:
+
+* Explore available courses
+* Register online
+* Send inquiries through a contact form
+
+All student data and messages are securely stored using **Firebase Realtime Database**.
 
 ---
 
-## 🚀 Features
+## 🚀 Key Features
 
-✅ Dynamic Course Display
-Courses are fetched from Firebase Realtime Database and rendered as responsive Bootstrap cards with images and detailed information.
+✅ **Dynamic Course Display**
+Course cards (with images and details) are fetched from Firebase and displayed using responsive design.
 
-✅ Interactive About Us Carousel
-A Bootstrap carousel that activates only when in viewport, enhancing performance and user experience.
+✅ **About Us Carousel**
+A smart carousel appears when you scroll to it, showing SRC’s values and student focus.
 
-✅ Smart Navigation
-Active class toggles dynamically based on scroll position, improving accessibility and visual feedback.
+✅ **Auto-Highlight Navigation**
+As the user scrolls, the active section is automatically highlighted in the navbar.
 
-✅ Firebase Integration
+✅ **Firebase Integration**
 
-* Realtime Database to store and retrieve course data, registrations, and contact messages.
-* Structured course categories for classes IX to XII across all major fields: Science, Pre-Medical, Pre-Engineering, and Computer Science.
+* Stores course info, student registrations, and contact messages
+* Course categories for Classes IX to XII across Science, Pre-Medical, Pre-Engineering & Computer Science
 
-✅ Live Registration Form
-A dynamic form that displays relevant field options based on the selected class. Submits student data to Firebase with proper field validation.
+✅ **Live Registration Form**
+Students can register based on their selected class. All information is submitted securely with validation.
 
-✅ Contact Us Form
-Capture visitor inquiries in real-time and store them securely in Firebase.
+✅ **Contact Us Form**
+Visitors can send messages that are saved in the database in real-time.
 
 ---
 
 ## 🔧 Technologies Used
 
-* HTML5, CSS3, JavaScript (ES6+)
-* Bootstrap 5 – For responsive design and UI components
-* Firebase Realtime Database – For real-time data storage and retrieval
+* HTML5, CSS3, JavaScript
+* Bootstrap 5 – for mobile-friendly layout
+* Firebase Realtime Database – for storing data and messages
 
 ---
 
-## 🌐 Live Demo
+## 🌐 Live Website
 
-[View Live Site](https://darishaansarii.github.io/SRC)
-
----
-
-## 🧩 Folder Structure
-
-
-📁 SRC-Website
-│
-├── 📄 index.html
-├── 📄 style.css
-├── 📄 script.js (this file)
-├── 📁 /Images
-│   └── card-1.jpg, card-2.jpg, ...
-
-
----
-## 📈 SEO Optimization
-
-* Semantic HTML structure with descriptive alt tags
-* Dynamic content rendered from a centralized database
-* Clean and modular JavaScript
-* Optimized for single-page experience
+👉 [View the Live Site](https://darishaansarii.github.io/SRC)
 
 ---
 
-## 🙌 Acknowledgements
+## 📈 SEO & Performance Optimization
 
-Project by Darisha Ansari
+* Clean HTML with image alt tags
+* Dynamic content loading
+* Optimized for a single-page experience
+
 ---
 
-## 📫 Contact
+## 🙌 Credits
 
-Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/darishaansarii/).
+Developed by **Darisha Ansari**
+
+---
+
+## 📬 Contact
+
+💼 [Connect on LinkedIn](https://www.linkedin.com/in/darishaansarii/)
+
+---
